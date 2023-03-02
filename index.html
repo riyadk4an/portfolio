@@ -12,6 +12,29 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    
+    <style>
+     #countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        animation: fadein 1s ease-in;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+        </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -28,12 +51,25 @@
             </h1>
             <p class="header-subtitle">WORDPRESS WEB DEVELOPER</p>
 
-            <button class="btn btn-primary" onclick="location.href='https://portfolio-c6e61e.ingress-baronn.ewp.live/'" type="button">Wait Or Click to Visit My Portfolio</button>
+            <button class="btn btn-primary" onclick="location.href='https://portfolio-c6e61e.ingress-baronn.ewp.live/'" type="button"><p color="white" id="countdown">3</p> Or Click to Visit My Portfolio</button>
         </div>
     </header><!-- end of page header -->
+     <p id="countdown">3</p>
+    <script>
+      var countdownElement = document.getElementById("countdown");
+      var count = 3;
+      var countdown = setInterval(function() {
+        count--;
+        countdownElement.innerHTML = count;
+        if (count == 0) {
+          clearInterval(countdown);
+         
+        }
+      }, 1000);
+     </script>
 
     
-    </div> <!-- end of page footer -->
+    
 </body>
 
 </html>
