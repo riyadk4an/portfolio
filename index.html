@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv = "refresh" content = "3; url = https://portfolio-c6e61e.ingress-baronn.ewp.live/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Riyad Khan</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    
+    <style>
+     #countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 10%;
+        background-color: #ADD8E6;
+        color: black;
+        animation: fadein 1s ease-in;
+      }
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+        </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <div class="overlay"></div>
+
+
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span><br>
+                <span class="down">I am Riyad Khan</span>
+            </h1>
+            <p class="header-subtitle">WORDPRESS WEB DEVELOPER</p>
+            <p color="" id="countdown">3</p>
+            <button class="button-1"  onclick="location.href='https://portfolio-c6e61e.ingress-baronn.ewp.live/'" role="button"><span class="text">Click to Visit My Portfolio</span></button>
+        </div>
+    </header><!-- end of page header -->
+    
+    
+    <script>
+      var countdownElement = document.getElementById("countdown");
+      var count = 3;
+      var countdown = setInterval(function() {
+        count--;
+        countdownElement.innerHTML = count;
+        if (count == 0) {
+          clearInterval(countdown);
+         
+        }
+      }, 1000);
+     </script>
+
+    
+    
+</body>
+
+</html>
