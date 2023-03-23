@@ -78,13 +78,8 @@ body .overlay{
   cursor: pointer;
 }
 
-.button-1:active,
-.button-1:hover {
-  outline: 0;
-}
 
 .button-1 span {
-  background-color: #3f7ea2;
   padding: 16px 24px;
   border-radius: 6px;
   width: 100%;
@@ -92,9 +87,6 @@ body .overlay{
   transition: 300ms;
 }
 
-.button-1:hover span {
-  background: none;
-}
 
 @media (min-width: 768px) {
   .button-1 {
