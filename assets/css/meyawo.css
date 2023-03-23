@@ -1,6 +1,8 @@
 body{
      background-image: url(../imgs/header.jpg);
     background-size: cover;
+      margin: 0px;
+    padding: 0px;
     background-repeat: no-repeat;
     background-position: center center;
 }
